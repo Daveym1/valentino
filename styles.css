@@ -1,10 +1,51 @@
 @media screen and (max-width: 600px) {
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.85em;
+}
+
+#about {
+    text-align: center;
+    color: #efefef;
+    font-size: 0.85em;
+  }
+
+  #services {
+    text-align: center;
+    color: #efefef;
+    font-size: 0.85em;
+  }
+
+    #contact {
+        text-align: center;
+        color: #efefef;
+        font-size: 0.85em;
+    }
+
+    #about, #services, #contact, p {
+        font-size: 0.85em !important;
+      }
+
     #navbar {
-        flex-direction: column;
+        position: static;
+        z-index: 1000;;
     }
     img {
     
         width: 100%;
+      }
+
+      .button {
+        position: fixed; /* Change to relative positioning */
+        top: 120px;          /* Remove fixed top position */
+        right: auto;        /* Remove fixed right position */
+        margin: 20px auto;  /* Center button below the navbar */
+        display: block;     /* Ensure the button takes up space */
+        text-align: center; /* Center the button text */
       }
 }
 
@@ -42,7 +83,7 @@
 
   .button {
     position: fixed; /* Ensures the button stays in the same position even when scrolling */
-    top: 10px;       /* Adjust the distance from the top edge of the page */
+    top: 40px;       /* Adjust the distance from the top edge of the page */
     right: 10px;     /* Adjust the distance from the right edge of the page */
     padding: 10px 20px; /* Add some padding for better appearance */
     
@@ -94,11 +135,57 @@
     font-size: 30px;
   }
 
-    #contact {
-        text-align: center;
-        color: #efefef;
-        font-size: 30px;
-    }
+  #contact {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text for contrast */
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px; /* Slight rounding for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  #contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff9200; /* Highlighted color for the heading */
+  }
+  
+  #contact p {
+    font-size: 1.1em;
+    margin: 10px 0;
+  }
+  
+  .contact-info {
+    margin: 20px 0;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    color: #ff9200; /* Highlighted links */
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-button {
+    background-color: #ff9200; /* Button color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #e67e00; /* Slightly darker on hover */
+  }
 
     section {
         padding: 50px;
@@ -113,3 +200,28 @@
         content: "\00a0";  /* Prevent margin collapse */
     }
 
+    .services-list {
+        list-style-type: none; /* Removes default bullets */
+        padding: 0;           /* Removes default padding */
+        margin: 0;
+        text-align: left;     /* Aligns list items */
+      }
+      
+      .services-list li {
+        margin-bottom: 10px;  /* Adds space between items */
+        padding: 10px;
+        border: 1px solid #ddd; /* Optional border around items */
+        border-radius: 5px;     /* Rounded corners */
+        background-color: #f9f9f9; /* Light background */
+        color: #333;            /* Text color */
+        font-size: 1em;         /* Adjust font size */
+        display: flex;          /* Flex for custom icons */
+        align-items: center;    /* Centers icon with text */
+      }
+      
+      .services-list li::before {
+        content: "✔";           /* Adds a checkmark or any symbol */
+        color: #ff9200;         /* Icon color */
+        font-size: 1.2em;
+        margin-right: 10px;     /* Space between icon and text */
+      }
