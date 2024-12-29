@@ -1,0 +1,115 @@
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
+    img {
+    
+        width: 100%;
+      }
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #efefef;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar a {
+    
+    color: #231f20;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a:hover {
+    background-color: #231f20;
+    color: #efefef;
+  }
+
+  .button {
+    position: fixed; /* Ensures the button stays in the same position even when scrolling */
+    top: 10px;       /* Adjust the distance from the top edge of the page */
+    right: 10px;     /* Adjust the distance from the right edge of the page */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+  body {
+    background-color: #231f20;
+  }
+
+  img {
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  #home {
+    text-align: center;
+    color: #efefef;
+    font-size: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    colefefef;
+    padding: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #efefef;
+    padding: 30px;
+  }
+
+  #about {
+    text-align: center;
+    color: #efefef;
+    font-size: 30px;
+  }
+
+  #services {
+    text-align: center;
+    color: #efefef;
+    font-size: 30px;
+  }
+
+    #contact {
+        text-align: center;
+        color: #efefef;
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    hr {
+        border: 0;
+        height: 0; /* Firefox... */
+        box-shadow: 0 0 10px 1px #646368;
+    }
+    hr:after {  /* Not really supposed to work, but does */
+        content: "\00a0";  /* Prevent margin collapse */
+    }
+
